@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en_us">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Rusty Brown's Donuts</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body onload="alert('Welcome!')">
+  <body>
     <nav class="navbar">
       <ul class="nav-links">
         <li><a href="/pages/about.html">About</a></li>
@@ -19,8 +19,9 @@
         <h2 class="tagline">Please login.</h2>
 
         <form action="/login" method="post" class="login-form">
-          <input id="email" name="u" type="text" placeholder="username" />
-          <input id="username" name="username" placeholder="type username again" />
+          <label for="email">Username</label>
+          <input id="email" name="u" type="text" placeholder="username" aria-label="Username"/>
+        <label for="tok">password</label>
           <input
             id="tok"
             name="t"
@@ -36,7 +37,7 @@
       </main>
 
       <footer>
-        <blockquote lang="portuguese">
+        <blockquote lang="pt">
           <p>Todos os direitos reservados.</p>
         </blockquote>
       </footer>
